@@ -1,12 +1,47 @@
-﻿<Window x:Class="Coolicky.Revit.Toolkit.Wpf.Progress.ProgressWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:Coolicky.Revit.Toolkit.Wpf.Progress"
-        mc:Ignorable="d"
-        Title="ProgressWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+﻿<Window
+    AllowsTransparency="True"
+    Background="Transparent"
+    Height="110"
+    ResizeMode="NoResize"
+    Topmost="True"
+    Width="800"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d"
+    x:Class="Coolicky.Revit.Toolkit.Wpf.Progress.ProgressWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:Theme Name="HandyTheme" />
+                <ResourceDictionary Source="/HandyControl;Component/Themes/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Border
+        Background="White"
+        BorderBrush="Gray"
+        BorderThickness="1"
+        CornerRadius="10"
+        MouseDown="Border_MouseDown">
+        <StackPanel>
+            <ProgressBar
+                Height="30"
+                IsIndeterminate="True"
+                Margin="0,25,0,13"
+                Width="750"
+                x:Name="ProgressBar" />
+            <TextBlock
+                FontSize="16"
+                HorizontalAlignment="Center"
+                Style="{StaticResource TextBlockDefaultSecLight}"
+                Text=""
+                x:Name="MessageText" />
+        </StackPanel>
+    </Border>
 </Window>

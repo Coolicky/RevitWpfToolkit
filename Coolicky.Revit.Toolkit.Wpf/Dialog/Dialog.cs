@@ -4,57 +4,57 @@ using System.Windows.Forms;
 
 namespace Coolicky.Revit.Toolkit.Wpf.Dialog
 {
-    public class Dialog : IDialog
+    public static class Dialog
     {
-        public void Info(string message)
+        public static void Info(string message)
         {
             var dialog = new MessageDialog(message);
             dialog.ShowDialog();
         }
 
-        public void Success(string message)
+        public static void Success(string message)
         {
             var dialog = new MessageDialog(message, MessageLevel.Success);
             dialog.ShowDialog();
         }
 
-        public void Warning(string message)
+        public static void Warning(string message)
         {
             var dialog = new MessageDialog(message, MessageLevel.Warning);
             dialog.ShowDialog();
         }
 
-        public void Error(string message)
+        public static void Error(string message)
         {
             var dialog = new MessageDialog(message, MessageLevel.Error);
             dialog.ShowDialog();
         }
 
-        public void Error(Exception e)
+        public static void Error(Exception e)
         {
             var dialog = new MessageDialog(e.Message, MessageLevel.Error);
             dialog.ShowDialog();
         }
 
-        public void DetailedError(Exception e)
+        public static void DetailedError(Exception e)
         {
             var dialog = new MessageDialog($"{e.Message}\n\n{e.StackTrace}", MessageLevel.Error);
             dialog.ShowDialog();
         }
 
-        public bool Confirm(string message, string yesButtonText = "Yes", string noButtonText = "No")
+        public static bool Confirm(string message, string yesButtonText = "Yes", string noButtonText = "No")
         {
             var dialog = new BoolDialog(message, yesButtonText, noButtonText);
             return dialog.ShowDialog() == true;
         }
 
-        public string Input(string message, string label = "", string buttonText = "Save")
+        public static string Input(string message, string label = "", string buttonText = "Save")
         {
             var dialog = new InputDialog(message, label, buttonText);
             return dialog.ShowDialog() != true ? null : dialog.Text;
         }
 
-        public string SelectFolder(string title, string description = "")
+        public static string SelectFolder(string title, string description = "")
         {
             var dialog = new FolderBrowserDialog();
             dialog.Description = title;
@@ -62,7 +62,7 @@ namespace Coolicky.Revit.Toolkit.Wpf.Dialog
             return dialog.ShowDialog() != DialogResult.OK ? null : dialog.SelectedPath;
         }
 
-        public string OpenFile(string title, string[] fileTypes = null)
+        public static string OpenFile(string title, string[] fileTypes = null)
         {
             var dialog = new OpenFileDialog();
             dialog.Title = title;
@@ -76,7 +76,7 @@ namespace Coolicky.Revit.Toolkit.Wpf.Dialog
             return dialog.ShowDialog() != DialogResult.OK ? null : dialog.FileName;
         }
 
-        public string[] OpenFiles(string title, string[] fileTypes = null)
+        public static string[] OpenFiles(string title, string[] fileTypes = null)
         {
             var dialog = new OpenFileDialog();
             dialog.Title = title;
@@ -90,7 +90,7 @@ namespace Coolicky.Revit.Toolkit.Wpf.Dialog
             return dialog.ShowDialog() != DialogResult.OK ? null : dialog.FileNames;
         }
 
-        public string SaveFile(string title, string[] fileTypes = null)
+        public static string SaveFile(string title, string[] fileTypes = null)
         {
             var dialog = new SaveFileDialog();
             dialog.Title = title;

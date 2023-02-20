@@ -1,12 +1,47 @@
-﻿<Window x:Class="Coolicky.Revit.Toolkit.Wpf.Dialog.BoolDialog"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:Coolicky.Revit.Toolkit.Wpf.Dialog"
-        mc:Ignorable="d"
-        Title="BoolDialog" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+﻿<Window
+    KeyDown="OnEnterClick"
+    MouseDown="Window_MouseDown"
+    SizeToContent="Height"
+    Title="TextDialog"
+    Topmost="True"
+    Width="600"
+    WindowStyle="None"
+    mc:Ignorable="d"
+    x:Class="Coolicky.Revit.Toolkit.Wpf.Dialog.BoolDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dialog="clr-namespace:Coolicky.Revit.Toolkit.Wpf.Dialog"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:Theme Name="HandyTheme" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <StackPanel
+        HorizontalAlignment="Stretch"
+        Margin="20"
+        VerticalAlignment="Center">
+        <TextBlock
+            FontSize="14"
+            HorizontalAlignment="Center"
+            Text="{Binding Description, RelativeSource={RelativeSource AncestorType={x:Type dialog:BoolDialog}}, FallbackValue=Provide_Text_Here}"
+            TextWrapping="Wrap" />
+
+        <hc:ButtonGroup Margin="0,20,0,0">
+            <Button
+                Click="NoClick"
+                Content="{Binding NoButtonText, RelativeSource={RelativeSource AncestorType={x:Type dialog:BoolDialog}}, FallbackValue=No}"
+                HorizontalAlignment="Stretch" />
+            <Button
+                Click="YesClick"
+                Content="{Binding YesButtonText, RelativeSource={RelativeSource AncestorType={x:Type dialog:BoolDialog}}, FallbackValue=Yes}"
+                HorizontalAlignment="Stretch" />
+        </hc:ButtonGroup>
+    </StackPanel>
 </Window>

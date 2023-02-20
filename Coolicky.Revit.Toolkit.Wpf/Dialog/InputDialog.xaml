@@ -1,12 +1,61 @@
-﻿<Window x:Class="Coolicky.Revit.Toolkit.Wpf.Dialog.InputDialog"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:Coolicky.Revit.Toolkit.Wpf.Dialog"
-        mc:Ignorable="d"
-        Title="InputDialog" Height="450" Width="800">
-    <Grid>
-        
+﻿<Window
+    KeyDown="OnEnterClick"
+    MouseDown="Window_MouseDown"
+    SizeToContent="Height"
+    Title="TextDialog"
+    Topmost="True"
+    Width="450"
+    WindowStyle="None"
+    mc:Ignorable="d"
+    x:Class="Coolicky.Revit.Toolkit.Wpf.Dialog.InputDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dialog1="clr-namespace:Coolicky.Revit.Toolkit.Wpf.Dialog"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:Theme Name="HandyTheme" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Stretch" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            FontSize="14"
+            HorizontalAlignment="Center"
+            Text="{Binding Message, RelativeSource={RelativeSource AncestorType={x:Type dialog1:InputDialog}}, FallbackValue=Provide_Text_Here}"
+            TextWrapping="Wrap" />
+        <TextBlock
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Margin="0,10,0,2"
+            Style="{StaticResource TextBlockDefaultSecLight}"
+            Text="{Binding Label, RelativeSource={RelativeSource AncestorType={x:Type dialog1:InputDialog}}, FallbackValue=Label}" />
+        <TextBox
+            Grid.Row="2"
+            Margin="0,0,0,10"
+            Text="{Binding Text, RelativeSource={RelativeSource AncestorType={x:Type dialog1:InputDialog}}}"
+            x:Name="InputBox" />
+
+        <hc:ButtonGroup Grid.Row="3">
+            <Button
+                Click="CancelClick"
+                Content="Cancel"
+                HorizontalAlignment="Stretch" />
+            <Button
+                Click="SaveClick"
+                Content="{Binding ButtonText, RelativeSource={RelativeSource AncestorType={x:Type dialog1:InputDialog}}, FallbackValue=Save}"
+                HorizontalAlignment="Stretch" />
+        </hc:ButtonGroup>
     </Grid>
 </Window>

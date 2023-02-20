@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace PM.Revit.Shared.Wpf.Utilities
+namespace Coolicky.Revit.Toolkit.Wpf.Converters
 {
     [ValueConversion(typeof(object), typeof(bool))]
     public class NullToBooleanConverter : IValueConverter

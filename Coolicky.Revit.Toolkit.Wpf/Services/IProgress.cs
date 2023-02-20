@@ -1,4 +1,4 @@
-﻿namespace Coolicky.Revit.Toolkit.Wpf.Progress
+﻿namespace Coolicky.Revit.Toolkit.Wpf.Services
 {
     public interface IProgress
     {

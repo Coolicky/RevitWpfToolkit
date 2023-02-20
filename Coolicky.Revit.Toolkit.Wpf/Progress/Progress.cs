@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Coolicky.Revit.Toolkit.Wpf.Progress
 {
-    public class Progress : IProgress
+    public class Progress
     {
         private static ProgressWindow _window;
         private static EventWaitHandle _eventWaitHandle;
