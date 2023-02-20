@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Nullable>disable</Nullable>
+        <Configurations>R20;R21;R22;R23</Configurations>
+        <Platforms>x64</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'R20'">
+        <TargetFramework>net47</TargetFramework>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' != 'R20'">
+        <TargetFramework>net48</TargetFramework>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+    
+    <ItemGroup Condition="'$(Configuration)' == 'R20'">
+        <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2020.0.1">
+            <PrivateAssets>all</PrivateAssets>
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)' == 'R21'">
+        <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2021.1.4">
+            <PrivateAssets>all</PrivateAssets>
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)' == 'R22'">
+        <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2022.1.0">
+            <PrivateAssets>all</PrivateAssets>
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)' == 'R23'">
+        <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2023.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Logging" />
+    </ItemGroup>
+    
+</Project>
