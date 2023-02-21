@@ -1,0 +1,130 @@
+19:39:45.261 | V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+19:39:45.294 | V |                      | Passing value for Build.Solution (WpfToolkit.sln)
+19:39:45.301 | V |                      | InjectParameterValues.OnBuildCreated (100)
+19:39:45.332 | V |                      | HandleShellCompletion.OnBuildCreated (75)
+19:39:45.417 | V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+19:39:45.418 | V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+19:39:45.428 | V |                      | UpdateNotification.OnBuildCreated (10)
+19:39:45.428 | V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+19:39:45.428 | V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+19:39:45.429 | V |                      | HandleSingleFileExecution.OnBuildCreated (-50)
+19:39:45.429 | V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+19:39:45.439 | V |                      | HandleHelpRequests.OnBuildInitialized (5)
+19:39:45.440 | V |                      | Telemetry.OnBuildInitialized (0)
+19:39:45.944 | V |                      | Sending BuildStarted telemetry event ...
+19:39:45.946 | V |                      |   build_components         = 
+19:39:45.946 | V |                      |   build_type               = Project
+19:39:45.946 | V |                      |   compile_time             = 4
+19:39:45.946 | V |                      |   config_generators        = 
+19:39:45.946 | V |                      |   host                     = Rider
+19:39:45.946 | V |                      |   num_custom_components    = 0
+19:39:45.946 | V |                      |   num_custom_extensions    = 0
+19:39:45.946 | V |                      |   num_partitioned_targets  = 0
+19:39:45.946 | V |                      |   num_secrets              = 1
+19:39:45.946 | V |                      |   num_targets              = 5
+19:39:45.946 | V |                      |   os_architecture          = X64
+19:39:45.946 | V |                      |   os_platform              = Linux
+19:39:45.946 | V |                      |   repo_branch              = main
+19:39:45.946 | V |                      |   repo_commit              = 62337c
+19:39:45.946 | V |                      |   repo_provider            = GitHub
+19:39:45.946 | V |                      |   repo_url                 = 9c2b64
+19:39:45.946 | V |                      |   target_framework         = .NETCoreApp,Version=v6.0
+19:39:45.946 | V |                      |   version_dotnet_sdk       = 7.0.102
+19:39:45.946 | V |                      |   version_nuke_common      = 6.3.0
+19:39:45.946 | V |                      |   version_nuke_global_tool = 6.3.0
+19:39:47.290 | V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+19:39:47.291 | V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+19:39:51.351 | V | Restore              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+19:39:51.365 | I | Restore              | > /home/coolicky/.dotnet/dotnet restore
+19:39:52.034 | D | Restore              |   Determining projects to restore...
+19:39:52.589 | W | Restore              | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project. [/home/coolicky/RiderProjects/RevitToolkit/WpfToolkit.sln]
+19:39:52.592 | D | Restore              |   All projects are up-to-date for restore.
+19:39:52.623 | V | Restore              | Telemetry.OnTargetSucceeded (0)
+19:39:52.769 | V | Restore              | Sending TargetSucceeded telemetry event ...
+19:39:52.769 | V | Restore              |   build_components         = 
+19:39:52.769 | V | Restore              |   build_type               = Project
+19:39:52.769 | V | Restore              |   compile_time             = 10
+19:39:52.769 | V | Restore              |   config_generators        = 
+19:39:52.769 | V | Restore              |   host                     = Rider
+19:39:52.769 | V | Restore              |   num_custom_components    = 0
+19:39:52.769 | V | Restore              |   num_custom_extensions    = 0
+19:39:52.769 | V | Restore              |   num_partitioned_targets  = 0
+19:39:52.769 | V | Restore              |   num_secrets              = 1
+19:39:52.769 | V | Restore              |   num_targets              = 5
+19:39:52.769 | V | Restore              |   os_architecture          = X64
+19:39:52.769 | V | Restore              |   os_platform              = Linux
+19:39:52.769 | V | Restore              |   repo_branch              = main
+19:39:52.769 | V | Restore              |   repo_commit              = 62337c
+19:39:52.769 | V | Restore              |   repo_provider            = GitHub
+19:39:52.769 | V | Restore              |   repo_url                 = 9c2b64
+19:39:52.769 | V | Restore              |   target_current_partition = 1
+19:39:52.769 | V | Restore              |   target_duration          = 1
+19:39:52.769 | V | Restore              |   target_framework         = .NETCoreApp,Version=v6.0
+19:39:52.769 | V | Restore              |   target_name              = Restore
+19:39:52.769 | V | Restore              |   target_total_partitions  = 1
+19:39:52.769 | V | Restore              |   version_dotnet_sdk       = 7.0.102
+19:39:52.769 | V | Restore              |   version_nuke_common      = 6.3.0
+19:39:52.769 | V | Restore              |   version_nuke_global_tool = 6.3.0
+19:39:53.018 | V | Restore              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+19:39:53.019 | V | Compile              | EventInvoker.OnTargetRunning (-3.4028235E+38)
+19:39:53.033 | I | Compile              | > /home/coolicky/.dotnet/dotnet build --configuration Debug --verbosity Minimal
+19:39:53.160 | D | Compile              | MSBuild version 17.4.1+9a89d02ff for .NET
+19:39:53.397 | D | Compile              |   Determining projects to restore...
+19:39:53.844 | W | Compile              | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project. [/home/coolicky/RiderProjects/RevitToolkit/WpfToolkit.sln]
+19:39:53.846 | D | Compile              |   All projects are up-to-date for restore.
+19:39:53.882 | W | Compile              | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.
+19:39:53.970 | D | Compile              |   ClassLibrary1 -> /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/bin/Debug/net7.0/ClassLibrary1.dll
+19:39:54.155 | D | Compile              |   Coolicky.Toolkit.Wpf -> /home/coolicky/RiderProjects/RevitToolkit/Coolicky.Toolkit.Wpf/bin/x64/Debug/net47/Coolicky.Toolkit.Wpf.dll
+19:39:54.925 | D | Compile              |   Coolicky.Toolkit.Wpf -> /home/coolicky/RiderProjects/RevitToolkit/Coolicky.Toolkit.Wpf/bin/x64/Debug/net48/Coolicky.Toolkit.Wpf.dll
+19:39:54.938 | D | Compile              | 
+19:39:54.939 | D | Compile              | Build succeeded.
+19:39:54.939 | D | Compile              | 
+19:39:54.939 | W | Compile              | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project. [/home/coolicky/RiderProjects/RevitToolkit/WpfToolkit.sln]
+19:39:54.939 | W | Compile              | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.
+19:39:54.939 | D | Compile              |     2 Warning(s)
+19:39:54.939 | D | Compile              |     0 Error(s)
+19:39:54.939 | D | Compile              | 
+19:39:54.939 | D | Compile              | Time Elapsed 00:00:01.74
+19:39:54.969 | V | Compile              | Telemetry.OnTargetSucceeded (0)
+19:39:55.103 | V | Compile              | Sending TargetSucceeded telemetry event ...
+19:39:55.103 | V | Compile              |   build_components         = 
+19:39:55.103 | V | Compile              |   build_type               = Project
+19:39:55.103 | V | Compile              |   compile_time             = 13
+19:39:55.103 | V | Compile              |   config_generators        = 
+19:39:55.103 | V | Compile              |   host                     = Rider
+19:39:55.103 | V | Compile              |   num_custom_components    = 0
+19:39:55.103 | V | Compile              |   num_custom_extensions    = 0
+19:39:55.103 | V | Compile              |   num_partitioned_targets  = 0
+19:39:55.103 | V | Compile              |   num_secrets              = 1
+19:39:55.103 | V | Compile              |   num_targets              = 5
+19:39:55.103 | V | Compile              |   os_architecture          = X64
+19:39:55.103 | V | Compile              |   os_platform              = Linux
+19:39:55.103 | V | Compile              |   repo_branch              = main
+19:39:55.103 | V | Compile              |   repo_commit              = 62337c
+19:39:55.103 | V | Compile              |   repo_provider            = GitHub
+19:39:55.103 | V | Compile              |   repo_url                 = 9c2b64
+19:39:55.103 | V | Compile              |   target_current_partition = 1
+19:39:55.103 | V | Compile              |   target_duration          = 2
+19:39:55.103 | V | Compile              |   target_framework         = .NETCoreApp,Version=v6.0
+19:39:55.103 | V | Compile              |   target_name              = Compile
+19:39:55.103 | V | Compile              |   target_total_partitions  = 1
+19:39:55.103 | V | Compile              |   version_dotnet_sdk       = 7.0.102
+19:39:55.103 | V | Compile              |   version_nuke_common      = 6.3.0
+19:39:55.103 | V | Compile              |   version_nuke_global_tool = 6.3.0
+19:39:55.149 | V | Compile              | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+19:39:55.150 | V | Pack                 | EventInvoker.OnTargetRunning (-3.4028235E+38)
+19:39:55.159 | I | Pack                 | > /home/coolicky/.dotnet/dotnet pack --configuration Debug --output /home/coolicky/RiderProjects/RevitToolkit/output --verbosity Minimal /property:Version=0.0.2
+19:39:55.319 | D | Pack                 | MSBuild version 17.4.1+9a89d02ff for .NET
+19:39:55.547 | D | Pack                 |   Determining projects to restore...
+19:39:56.112 | W | Pack                 | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project. [/home/coolicky/RiderProjects/RevitToolkit/WpfToolkit.sln]
+19:39:56.136 | D | Pack                 |   Restored /home/coolicky/RiderProjects/RevitToolkit/Coolicky.Toolkit.Wpf/Coolicky.Toolkit.Wpf.csproj (in 164 ms).
+19:39:56.137 | D | Pack                 |   Restored /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj (in 164 ms).
+19:39:56.230 | W | Pack                 | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.
+19:39:56.372 | D | Pack                 |   Coolicky.Toolkit.Wpf -> /home/coolicky/RiderProjects/RevitToolkit/Coolicky.Toolkit.Wpf/bin/x64/Debug/net48/Coolicky.Toolkit.Wpf.dll
+19:39:56.469 | D | Pack                 |   Coolicky.Toolkit.Wpf -> /home/coolicky/RiderProjects/RevitToolkit/Coolicky.Toolkit.Wpf/bin/x64/Debug/net47/Coolicky.Toolkit.Wpf.dll
+19:39:56.599 | D | Pack                 |   Successfully created package '/home/coolicky/RiderProjects/RevitToolkit/output/Coolicky.Toolkit.Wpf.0.0.2.nupkg'.
+19:39:56.808 | D | Pack                 |   ClassLibrary1 -> /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/bin/Debug/net7.0/ClassLibrary1.dll
+19:39:56.864 | W | Pack                 | /home/coolicky/RiderProjects/RevitToolkit/ClassLibrary1/ClassLibrary1.csproj : warning NU1701: Package 'Coolicky.Toolkit.Wpf 0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.
+19:39:56.947 | D | Pack                 |   Successfully created package '/home/coolicky/RiderProjects/RevitToolkit/output/ClassLibrary1.0.0.2.nupkg'.
+19:39:56.989 | V | Pack                 | Telemetry.OnTargetSucceeded (0)
+19:39:56.989 | V | Pack                 | EventInvoker.OnTargetSucceeded (-3.4028235E+38)

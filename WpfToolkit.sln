@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coolicky.Toolkit.Wpf", "Coolicky.Toolkit.Wpf\Coolicky.Toolkit.Wpf.csproj", "{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{E5781277-20B1-4ABD-9832-4FAE30DD79EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -12,5 +14,6 @@ Global
 		{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}.Debug|x64.Build.0 = Debug|x64
 		{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}.Release|x64.ActiveCfg = Release|x64
 		{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}.Release|x64.Build.0 = Release|x64
+		{E5781277-20B1-4ABD-9832-4FAE30DD79EB}.Debug|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 EndGlobal

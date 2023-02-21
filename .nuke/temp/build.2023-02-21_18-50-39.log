@@ -1,0 +1,26 @@
+V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+V |                      | Passing value for <unresolved> (WpfToolkit.sln)
+V |                      | InjectParameterValues.OnBuildCreated (100)
+V |                      | HandleShellCompletion.OnBuildCreated (75)
+V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+V |                      | UpdateNotification.OnBuildCreated (10)
+V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+V |                      | HandleSingleFileExecution.OnBuildCreated (-50)
+V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+V |                      | HandleHelpRequests.OnBuildInitialized (5)
+V |                      | Telemetry.OnBuildInitialized (0)
+W |                      | Attempting second-chance registration of MSBuild after RegisterDefaults failed
+W |                      | Could not register MSBuild: Could not find 'dotnet' via '/usr/bin/which'.
+W |                      | Attempting second-chance registration of MSBuild after RegisterDefaults failed
+W |                      | Could not register MSBuild: Could not find 'dotnet' via '/usr/bin/which'.
+W |                      | Exception was suppressed
+System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'. The system cannot find the file specified.
+
+File name: 'Microsoft.Build, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+V | Clean                | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | Clean                | Telemetry.OnTargetSucceeded (0)
+V | Clean                | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
