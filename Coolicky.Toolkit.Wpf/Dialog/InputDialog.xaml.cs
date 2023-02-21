@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Dialog
+namespace Coolicky.Toolkit.Wpf.Dialog
 {
     public partial class InputDialog
     {

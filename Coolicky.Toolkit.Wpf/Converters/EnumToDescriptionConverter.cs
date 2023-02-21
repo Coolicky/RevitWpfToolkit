@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Data;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Converters
+namespace Coolicky.Toolkit.Wpf.Converters
 {
     [ValueConversion(typeof(Enum), typeof(string))]
     public class EnumToDescriptionConverter : IValueConverter

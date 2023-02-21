@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Progress
+namespace Coolicky.Toolkit.Wpf.Progress
 {
     public class Progress
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Progress
+namespace Coolicky.Toolkit.Wpf.Progress
 {
     public partial class ProgressWindow
     {

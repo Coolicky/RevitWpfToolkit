@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Converters
+namespace Coolicky.Toolkit.Wpf.Converters
 {
     [ValueConversion(typeof(object), typeof(Visibility))]
     public class InverseNullToVisibilityConverter : IValueConverter

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Coolicky.Revit.Toolkit.Wpf.Dialog
+namespace Coolicky.Toolkit.Wpf.Dialog
 {
     public static class Dialog
     {
