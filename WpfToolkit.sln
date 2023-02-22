@@ -15,5 +15,6 @@ Global
 		{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}.Release|x64.ActiveCfg = Release|x64
 		{57B3F455-9BFA-44F4-BC01-5B7DBEECE055}.Release|x64.Build.0 = Release|x64
 		{E5781277-20B1-4ABD-9832-4FAE30DD79EB}.Debug|x64.ActiveCfg = Release|x64
+		{E5781277-20B1-4ABD-9832-4FAE30DD79EB}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 EndGlobal
