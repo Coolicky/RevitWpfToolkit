@@ -48,7 +48,7 @@ partial class Build : NukeBuild
                 .SetPackageTags(Tags)
                 .SetRepositoryType(RepoType)
                 .SetRepositoryUrl(GitRepository.HttpsUrl)
-                .SetOutputDirectory(ArtifactsDirectory)
-                .SetVerbosity(DotNetVerbosity.Minimal));
+                // .SetOutputDirectory(ArtifactsDirectory)
+                .SetVerbosity(DotNetVerbosity.Normal));
         });
 }
