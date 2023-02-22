@@ -1,6 +1,5 @@
 using Nuke.Common;
 using Nuke.Common.Tools.DotNet;
-using Serilog;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
@@ -48,6 +47,7 @@ partial class Build : NukeBuild
                 .SetPackageTags(Tags)
                 .SetRepositoryType(RepoType)
                 .SetRepositoryUrl(GitRepository.HttpsUrl)
+                //TODO: Set properly when microsoft fixes the issue
                 // .SetOutputDirectory(ArtifactsDirectory)
                 .SetVerbosity(DotNetVerbosity.Normal));
         });

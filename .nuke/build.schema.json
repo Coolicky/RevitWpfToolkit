@@ -104,6 +104,7 @@
               "NuGetPush",
               "NuGetPushGithub",
               "Pack",
+              "Print",
               "Restore"
             ]
           }

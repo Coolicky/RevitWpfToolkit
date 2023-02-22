@@ -45,6 +45,7 @@ public partial class Build
 
     AbsolutePath GetNugetPackage()
     {
+        //TODO: Set properly when microsoft fixes the issue
         var package = RootDirectory
             .GlobFiles("**/*.nupkg")
             .FirstOrDefault(r =>
