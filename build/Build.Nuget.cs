@@ -20,10 +20,7 @@ public partial class Build
         .OnlyWhenStatic(() => IsLocalBuild)
         .Executes(() =>
         {
-            var package = ArtifactsDirectory
-                .GlobFiles("*.nupkg")
-                .FirstOrDefault(r =>
-                    r.NameWithoutExtension.EndsWith(GitVersion.SemVer));
+            var package = GetNugetPackage();
             if (package is null) return;
             DotNetNuGetPush(settings => settings
                 .SetTargetPath(package)
@@ -38,14 +35,20 @@ public partial class Build
         .OnlyWhenStatic(() => IsLocalBuild)
         .Executes(() =>
         {
-            var package = ArtifactsDirectory
-                .GlobFiles("*.nupkg")
-                .FirstOrDefault(r =>
-                    r.NameWithoutExtension.EndsWith(GitVersion.SemVer));
+            var package = GetNugetPackage();
             if (package is null) return;
             DotNetNuGetPush(settings => settings
                 .SetTargetPath(package)
                 .SetSource(NugetGithubUrl)
                 .SetApiKey(GithubToken));
         });
+
+    AbsolutePath GetNugetPackage()
+    {
+        var package = RootDirectory
+            .GlobFiles("**/*.nupkg")
+            .FirstOrDefault(r =>
+                r.NameWithoutExtension.EndsWith(GitVersion.SemVer));
+        return package;
+    }
 }
