@@ -49,6 +49,6 @@ partial class Build : NukeBuild
                 .SetRepositoryUrl(GitRepository.HttpsUrl)
                 //TODO: Set properly when microsoft fixes the issue
                 // .SetOutputDirectory(ArtifactsDirectory)
-                .SetVerbosity(DotNetVerbosity.Normal));
+                .SetVerbosity(DotNetVerbosity.Minimal));
         });
 }
