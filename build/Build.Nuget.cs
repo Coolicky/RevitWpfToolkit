@@ -27,20 +27,6 @@ public partial class Build
                 .SetSource(NugetApiUrl)
                 .SetApiKey(NugetApiKey));
         });
-    
-    Target NuGetPushGithub => _ => _
-        .Requires(() => GithubToken)
-        .DependsOn(Pack)
-        .OnlyWhenStatic(() => GitRepository.IsOnMainOrMasterBranch())
-        .Executes(() =>
-        {
-            var package = GetNugetPackage();
-            if (package is null) return;
-            DotNetNuGetPush(settings => settings
-                .SetTargetPath(package)
-                .SetSource(NugetGithubUrl)
-                .SetApiKey(GithubToken));
-        });
 
     AbsolutePath GetNugetPackage()
     {
