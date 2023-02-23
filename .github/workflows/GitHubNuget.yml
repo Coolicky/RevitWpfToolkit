@@ -1,4 +1,4 @@
-name: GitHubNuget
+name: "Push Nuget to Github"
 
 on:
   push:
@@ -23,5 +23,5 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '7.0.103'
-      - name: RunNuke Gihub Push
+      - name: RunNuke Github Push
         run: ./build.sh NuGetPushGithub --GithubToken ${{ secrets.GITHUB_TOKEN }}
