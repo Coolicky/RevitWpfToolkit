@@ -32,7 +32,6 @@ public partial class Build
         .Requires(() => GithubToken)
         .DependsOn(Pack)
         .OnlyWhenStatic(() => GitRepository.IsOnMainOrMasterBranch())
-        .OnlyWhenStatic(() => IsLocalBuild)
         .Executes(() =>
         {
             var package = GetNugetPackage();
