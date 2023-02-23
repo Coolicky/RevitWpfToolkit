@@ -9,12 +9,8 @@ public partial class Build
 {
     const string NugetApiUrl = "https://api.nuget.org/v3/index.json";
     [Secret] [Parameter] string NugetApiKey;
-    
-    const string NugetGithubUrl = "https://nuget.pkg.github.com/Coolicky/index.json";
-    [Secret] [Parameter] string GithubToken;
-
     Target NuGetPush => _ => _
-        .Requires(() => GithubToken)
+        .Requires(() => GitHubToken)
         .DependsOn(Pack)
         .OnlyWhenStatic(() => GitRepository.IsOnMainOrMasterBranch())
         .OnlyWhenStatic(() => IsLocalBuild)
@@ -26,20 +22,6 @@ public partial class Build
                 .SetTargetPath(package)
                 .SetSource(NugetApiUrl)
                 .SetApiKey(NugetApiKey));
-        });
-    
-    Target NuGetPushGithub => _ => _
-        .Requires(() => GithubToken)
-        .DependsOn(Pack)
-        .OnlyWhenStatic(() => GitRepository.IsOnMainOrMasterBranch())
-        .Executes(() =>
-        {
-            var package = GetNugetPackage();
-            if (package is null) return;
-            DotNetNuGetPush(settings => settings
-                .SetTargetPath(package)
-                .SetSource(NugetGithubUrl)
-                .SetApiKey(GithubToken));
         });
 
     AbsolutePath GetNugetPackage()
