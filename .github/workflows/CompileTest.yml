@@ -1,4 +1,4 @@
-name: "Push Nuget to Github"
+name: "Compile Test"
 
 on:
   push:
