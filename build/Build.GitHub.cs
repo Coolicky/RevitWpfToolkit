@@ -12,7 +12,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 public partial class Build
 {
     Target NuGetPushGithub => _ => _
-        .Requires(() => GithubToken)
+        // .Requires(() => GithubToken)
         .DependsOn(Pack)
         .OnlyWhenStatic(() => GitRepository.IsOnMainOrMasterBranch())
         .Executes(() =>
